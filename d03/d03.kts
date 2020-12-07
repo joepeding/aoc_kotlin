@@ -5,10 +5,6 @@ import java.util.regex.Pattern
 val lines: MutableList<String> = File("input").useLines { it.toMutableList() }
 val width = lines[0].length
 
-
-println(lines[0].length)
-println(lines.size)
-
 fun treeAtCoord(x: Int, y: Int): Boolean {
     return lines[y][x % width] == '#'
 }
