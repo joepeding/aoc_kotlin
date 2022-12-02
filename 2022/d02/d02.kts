@@ -5,6 +5,7 @@ val input: String = File("input").readText()
 val rounds: List<String> = input.split("\n").filter { it.isNotEmpty() }
 
 // Part 1
+print("Answer 1: ")
 rounds
     .map {
         when (it) {
@@ -21,9 +22,10 @@ rounds
         }
     }
     .sum()
-    .also { println(it) }
+    .let { println(it) }
 
 //Part 2
+print("Answer 2: ")
 rounds
     .map {
         when (it) {
@@ -40,5 +42,5 @@ rounds
         }
     }
     .sum()
-    .also { println(it) }
+    .let { println(it) }
 

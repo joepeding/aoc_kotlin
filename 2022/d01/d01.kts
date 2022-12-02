@@ -11,13 +11,12 @@ val inventories: List<List<Long>> = input
             .map { it.toLong() }
     }
 val inventorySums = inventories.map { it.sum() }
-
-println("answer 1:")
+print("Answer 1: ")
 println(inventorySums.max())
 
-println("answer 2:")
+print("Answer 2: ")
 inventorySums
     .sortedDescending()
-    .also { println(it[0] + it[1] + it[2]) }
+    .let { println(it[0] + it[1] + it[2]) }
 
 
