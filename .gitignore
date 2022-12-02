@@ -22,17 +22,18 @@
 *.tar.gz
 *.rar
 
-# Other files
-d04/d04a.kts
-d04/logs
-
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 # Mac stuff
-.DS_Store
+**/.DS_Store
 
 # AoC input/test files
 **/test
 **/input
 **/testinput
+
+# AoC misc output files
+2020/d04/d04a.kts
+2020/d04/logs
+2020/d19/testinput2
