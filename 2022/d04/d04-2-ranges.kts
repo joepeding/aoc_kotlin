@@ -17,16 +17,16 @@ val pairs: List<List<LongRange>> = input
 // Part 1
 print("Answer 1: ")
 pairs
-    .filter { pair ->
+    .count { pair ->
         pair[0].all { pair[1].contains(it) } || pair[1].all { pair[0].contains(it) }
     }
-    .let { println(it.count()) }
+    .let(::println)
 
 
 //Part 2
 print("Answer 2: ")
 pairs
-    .filter { pair ->
+    .count { pair ->
         pair[0].any { pair[1].contains(it) } || pair[1].any { pair[0].contains(it) }
     }
-    .let { println(it.count()) }
+    .let(::println)
