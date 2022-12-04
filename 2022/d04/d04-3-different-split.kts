@@ -1,5 +1,4 @@
 import java.io.File
-import java.util.SortedSet
 
 val input: String = File("input").readText()
 val pairs = input
@@ -8,7 +7,7 @@ val pairs = input
     .map { it.toLong() }
     .windowed(4, 4, false) { it -> Pair(it[0]..it[1], it[2]..it[3]) }
 
-// Part 1
+// Part 1   
 print("Answer 1: ")
 pairs
     .count { pair ->

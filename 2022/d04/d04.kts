@@ -1,5 +1,4 @@
 import java.io.File
-import java.util.SortedSet
 
 val input: String = File("input").readText()
 val pairs: List<List<List<Long>>> = input
