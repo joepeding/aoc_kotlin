@@ -6,11 +6,8 @@ val pairs = input
     .split("\n", ",", "-")
     .filter { it.isNotEmpty() }
     .map { it.toLong() }
-    .zipWithNext { a, b -> a..b }
-    .filterIndexed { index, _ -> index % 2 == 0 }
-    .zipWithNext { a, b -> Pair(a, b) }
-    .filterIndexed { index, _ -> index % 2 == 0 }
-Ú
+    .windowed(4, 4, false) { it -> Pair(it[0]..it[1], it[2]..it[3]) }
+
 // Part 1
 print("Answer 1: ")
 pairs
