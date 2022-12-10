@@ -23,7 +23,7 @@ input
 println(count)
 
 
-//Part 2 (parse input again, because original was modified)
+//Part 2
 println("Answer 2: ")
 input
     .mapIndexed { y, row ->
