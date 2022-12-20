@@ -3,6 +3,8 @@ import java.io.File
 val input: String = File("input").readText().trim()
 
 // Part 1
+println("All inputs unique: ${input.split("\n").map{ it.toInt() }.let { it.size == it.distinct().size }}")
+
 print("Answer 1: ")
 println(mix())
 
