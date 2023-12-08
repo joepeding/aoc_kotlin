@@ -33,7 +33,7 @@ hs_err_pid*
 **/test
 **/input
 **/testinput
-**/example
+**/example*
 
 # AoC misc output files
 2020/d04/d04a.kts
